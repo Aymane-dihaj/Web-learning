@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+h1{
+   font-size: 2.5rem;
+   font-weight: 400;
+   margin-bottom: 1.25rem;
+   margin-top: 3rem;
+   text-align: center;
+   color: #edede9;
+}
+
+h4{
+   text-align: center;
+   color: gray;
+   margin-bottom: 2rem;
+}
+
+body{
+   font-family: 'Poppins', sans-serif;
+   line-height: 1.4;
+   background: linear-gradient(90deg, black, gray);
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container{
+   margin: 0 auto;
+   padding: 0.25rem;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+   max-width: 700px;
+}
+
+
+form{
+   border: 3px solid gray;
+   border-radius: 0.8rem;
+   padding: 2rem;
+   width: 100%
+}
+
+p{
+   margin-bottom: 0.9em;
+   color: white
+}
+
+label{
+   color: white;
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+.form-group{
+   margin-bottom: 1.4rem;
+   margin-top: 1.5rem;
+}
+
+textarea{
+   width: 100%;
+   height: 100px;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   border: 2px solid gray;
+   font-family: poppins;
+}
+
+.form-control{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   border: 2px solid gray;
+   margin-top: 0.2rem;
+   margin-bottom: 0.5rem;
+}
+
+.submit-button{
+   width: 100%;
+   padding: 0.70rem;
+   background: linear-gradient(90deg, gray, black);
+   border: 2px solid black;
+   border-radius: 0.5rem;
+   cursor: pointer;
+   color: white;
+}
+
+
+input[type="radio"]{
+   margin-bottom: 1.5rem;
+   margin-left: 0.8rem;
+}
+
+input[type="checkbox"]{
+   margin-bottom: 1rem;
+   margin-left: 0.8rem;
+}
+
+hr{
+   width: 100%;
+   color: gray;
+   background: linear-gradient(to right, black,
+
+   border-style: groove;
+}
+
+.submit-button:hover{
+   border: 2px solid gray;
+   transition: 0.2s ease-in-out;
+}
