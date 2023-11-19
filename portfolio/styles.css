@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+    padding: 0;
+}
+
+html
+{
+    font-family: teko , sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    color: white;
+    width: 100%;
+    background-color: black;
+    /* background-image: url(&quot;/_next/static/media/line_pattern.e86f2713.svg&quot;); */
+    /* padding-top: 70px; */
+}
+
+#header
+{
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.137);
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+#navbar
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+}
+
+#navbar ul
+{
+    /* border: 2px solid blue; */
+    /* border: 3px solid red; */
+    display: flex;
+    width: 80%;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-link
+{
+    margin: 0;
+}
+
+.nav-link a
+{
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+}
+
+.nav-link a:hover
+{
+    color: green;
+}
+
+#welcome-section
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-section h1
+{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#welcome-section h2{
+    font-size: 27px;
+}
+
+.green-span
+{
+    margin: 4px;
+    color: rgb(54, 218, 32);
+}
+
+#projects 
+{
+    /* border: 2px solid red; */
+    border-top: 2px solid gray;
+
+}
+
+#projects h1 
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+
+#parent-grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 5em;
+    margin-bottom: 10em;
+}
+
+.project-tile a
+{
+    /* border: 2px solid green; */
+    display: flex;
+    height: 440px;
+    flex-direction: column;
+    border: 3px solid transparent;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.project-tile img
+{
+    height: 85%;
+    width: 400px;
+    object-fit: cover;
+    margin: 0;
+}
+
+
+
+.project-tile h3
+{
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 3px;
+    background-color: rgba(71, 71, 71, 0.308);
+}
+
+
+.code
+{
+    font-size: 17px;
+    margin: 10px;
+    font-weight: light;
+    color: transparent;
+}
+
+.project-tile:hover span
+{
+    color: green;
+}
+
+
+#contact
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid gray;
+}
+
+#contact h1
+{
+    width: 75%;
+    max-width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+}
+
+.contact-span
+{
+    color: green;
+    margin: 15px;
+}
+
+#contact-infos
+{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 3em;
+}
+
+
+#contact-infos a
+{
+    text-decoration: none; 
+    color: white;
+    font-size: 1.6em;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    /* border: 2px solid green; */
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.fab .fas
+{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+}
+
+.fab , .fas{
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+}
+
+#contact-infos i::before
+{
+    /* border: 3px solid green; */
+    filter: invert(15%);
+}
+
+#contact-infos a:hover
+{
+    border-color: green;
+}
+
+footer
+{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    word-spacing: 6px;
+}
+
+@media screen and (max-width: 919px) {
+    .project-tile
+    {
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .project-tile img
+    {
+        height: 80%;
+        width: 100%;
+    }
+    .project-tile a
+    {
+        height: 400px;
+    }
+    
+    #contact-infos a
+    {
+        font-size: 1.3em;
+        padding: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    
+    .project-tile
+    {
+        width: 280px;
+        height: 320px;
+        object-fit: cover;
+    }
+    
+    #welcome-section h1
+    {
+        font-size: 3.5em;
+
+    }
+
+    
+    .project-tile img
+    {
+        height: 85%;
+        width: 100%;
+    }
+    .project-tile a
+    {
+        height: 320px;
+        font-size: 0.9em;
+    }
+
+    #contact-infos
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #contact-infos a
+    {
+        font-size: 1.1em;
+        width: max-content;
+    }
+    
+    #contact h1
+    {
+        width: 40rem;
+        font-size: 4em;
+        
+    }
+    
+    .contact-span
+    {
+        margin: 8px;
+    }
+    
+    #projects h1
+    {
+        /* border: 3px solid red; */
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (max-width: 590px)
+{
+    #parent-grid
+    {
+        grid-template-columns: 100%;
+        grid-row-gap: 2em;
+    }
+    
+    .project-tile
+    {
+        /* border: 3px solid green; */
+        width: 350px;
+        height: 380px;
+    }
+
+    .project-tile img
+    {
+        height: 85%;
+        width: 100%;
+    }
+    .project-tile a
+    {
+        height: 100%;
+        font-size: 0.8em;
+    }
+    
+    #contact h1
+    {
+        width: 100%;
+        font-size: 3em;
+    }
+    
+    #contact-infos 
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1.5em;
+    }
+}
