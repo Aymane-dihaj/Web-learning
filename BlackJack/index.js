@@ -86,7 +86,7 @@ let count = 0
 
 function chargeBalance()
 {
-    if (player.chips > 0 && count < 3)
+    if (player.chips >= 0 && count < 3)
     {
         player.chips += 100
         count++;
